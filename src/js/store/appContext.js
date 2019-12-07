@@ -29,7 +29,25 @@ const injectContext = PassedComponent => {
 			 *
 			 * state.actions.loadSomeData(); <---- calling this function from the flux.js actions
 			 *
-			 **/
+			 */
+			let urls = [
+				"https://swapi.co/api/planets/",
+				"https://swapi.co/api/people/",
+				"https://swapi.co/api/vehicles/"
+			];
+			let promises = urls.map(url => fetch(url).then(response => response.json()));
+			Promise.all(promises).then(results => {
+				let { store, actions } = state;
+				setState({
+					...state,
+					store: {
+						...store,
+						planets: results[0].results,
+						people: results[1].results,
+						vehicles: results[2].results
+					}
+				});
+			});
 		}, []);
 
 		// the initial value for the context its not null anymore, but the current state of this component,
