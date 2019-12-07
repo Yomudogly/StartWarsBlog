@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import StarWars from "../../img/StarWars.png";
 
 export const Navbar = () => {
 	return (
 		<nav className="navbar navbar-light bg-light mb-5">
 			<div className="container">
 				<Link to="/">
-					<span className="navbar-brand mb-0 h1">React Boilerplate</span>
+					<img src={StarWars} width="100" height="50" alt="Logo" />
 				</Link>
 				<div className="ml-auto">
 					<Link to="/demo">
