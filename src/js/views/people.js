@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 
-export const Single = props => {
+export const People = props => {
 	const { store, actions } = useContext(Context);
 
 	return (
@@ -29,6 +29,6 @@ export const Single = props => {
 	);
 };
 
-Single.propTypes = {
+People.propTypes = {
 	match: PropTypes.object
 };
