@@ -20,7 +20,9 @@ export const Home = () => {
 								alt="Card image cap"
 							/>
 							<div className="card-body">
-								<h5 className="card-title">{item.name}</h5>
+								<h5 className="card-title">
+									<Link to={`/single/${index}`}>{item.name}</Link>
+								</h5>
 								<p className="card-text">
 									<span>Birth Year: {item.birth_year}</span> <br />
 									<span>Gender: {item.gender}</span> <br />
@@ -48,7 +50,9 @@ export const Home = () => {
 								alt="Card image cap"
 							/>
 							<div className="card-body">
-								<h5 className="card-title">{item.name}</h5>
+								<h5 className="card-title">
+									<Link to={`/single/${index}`}>{item.name}</Link>
+								</h5>
 								<p className="card-text">
 									<span>Population: {item.population}</span> <br />
 									<span>Climate: {item.climate}</span> <br />
@@ -76,7 +80,9 @@ export const Home = () => {
 								alt="Card image cap"
 							/>
 							<div className="card-body">
-								<h5 className="card-title">{item.name}</h5>
+								<h5 className="card-title">
+									<Link to={`/single/${index}`}>{item.name}</Link>
+								</h5>
 								<p className="card-text">
 									<span>Cargo Capacity: {item.cargo_capacity}</span> <br />
 									<span>Crew: {item.crew}</span> <br />

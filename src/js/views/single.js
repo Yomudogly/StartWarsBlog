@@ -5,12 +5,21 @@ import { Context } from "../store/appContext";
 
 export const Single = props => {
 	const { store, actions } = useContext(Context);
+
 	return (
-		<div className="jumbotron">
-			<h1 className="display-4">This will show the demo element: {store.demo[props.match.params.theid].title}</h1>
-
-			<hr className="my-4" />
-
+		<div className="card">
+			<img className="card-img-top" src="https://picsum.photos/180/100?random=5" alt="Card image cap" />
+			<div className="card-body">
+				<h5 className="card-title">{store.people[props.match.params.theid].name}</h5>
+				<p className="card-text">
+					<span>Birth Year: {store.people[props.match.params.theid].birth_year}</span> <br />
+					<span>Gender: {store.people[props.match.params.theid].gender}</span> <br />
+					<span>Height: {store.people[props.match.params.theid].height}</span> <br />
+					<span>Mass: {store.people[props.match.params.theid].mass}</span> <br />
+					<span>Skin: {store.people[props.match.params.theid].skin_color}</span> <br />
+					<span>Eye Color: {store.people[props.match.params.theid].eye_color}</span>
+				</p>
+			</div>
 			<Link to="/">
 				<span className="btn btn-primary btn-lg" href="#" role="button">
 					Back home
