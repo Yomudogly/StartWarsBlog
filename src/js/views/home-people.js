@@ -35,4 +35,4 @@ const HomePeople = () => {
 		</div>
 	);
 };
-export default  HomePeople;
+export default HomePeople;

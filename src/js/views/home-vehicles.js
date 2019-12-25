@@ -38,4 +38,4 @@ const HomeVehicles = () => {
 	);
 };
 
-export default  HomeVehicles;
+export default HomeVehicles;

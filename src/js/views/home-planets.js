@@ -37,4 +37,4 @@ const HomePlanets = () => {
 	);
 };
 
-export default  HomePlanets;
+export default HomePlanets;
