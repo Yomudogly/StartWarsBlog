@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import loadable from "@loadable/component";
 // import HomePeople from "./home-people";
