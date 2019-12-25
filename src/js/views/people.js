@@ -8,7 +8,7 @@ export const People = props => {
 
 	return (
 		<div className="card">
-			<img className="card-img-top" src="https://picsum.photos/180/100?random=5" alt="Card image cap" />
+			<img className="card-img-top" src="http://www.facetheforce.today/random/180?r=1" alt="Card image cap" />
 			<div className="card-body">
 				<h5 className="card-title">{store.people[props.match.params.theid].name}</h5>
 				<p className="card-text">

@@ -13,7 +13,7 @@ const HomePeople = () => {
 					<div className="card" key={index}>
 						<img
 							className="card-img-top"
-							src="https://picsum.photos/180/100?random=5"
+							src="http://www.facetheforce.today/random/180?r=1"
 							alt="Card image cap"
 						/>
 						<div className="card-body">
